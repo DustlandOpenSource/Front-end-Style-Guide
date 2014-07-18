@@ -1,5 +1,11 @@
 Front-end Style Guide
 =====================
+## References
+* [MDN: Writing Efficient CSS](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS)
+* [Google: CSS Rules Intro](https://developers.google.com/speed/docs/best-practices/rules_intro)
+* [Google: Optimizing CSS](https://developers.google.com/speed/articles/optimizing-css)
+* [CSS Tricks: Efficiently Rendering CSS](http://css-tricks.com/efficiently-rendering-css/)
+---
 ## CSS
 ##### Using every declaration just once.
 *Bad:*
@@ -98,5 +104,5 @@ $menu.on('hover', function(){...});
 ---
 ## JavaScript Libraries
  
-* Don’t use jQuery if its not necessary.
-* Use Low-Dash instead Underscore.
+* Don’t use [jQuery](http://jquery.com/) if its not necessary.
+* Use [Lo-Dash](http://lodash.com/) instead of [Underscore](http://underscorejs.org/).
