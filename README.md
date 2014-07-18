@@ -5,7 +5,7 @@ Front-end Style Guide
 * [Google: CSS Rules Intro](https://developers.google.com/speed/docs/best-practices/rules_intro)
 * [Google: Optimizing CSS](https://developers.google.com/speed/articles/optimizing-css)
 * [CSS Tricks: Efficiently Rendering CSS](http://css-tricks.com/efficiently-rendering-css/)
----
+
 ## CSS
 ##### Using every declaration just once.
 *Bad:*
@@ -24,6 +24,7 @@ h1, h2, h3, p { color: black; }
 body { color: black; }
 ```
 ---
+
 ##### Don’t concatenate ID’s or Classnames with tag names.
 *Bad:*
 ```
@@ -41,12 +42,14 @@ ul .list-item {}
 #mainMenu .list-item
 ```
 ---
+
 ##### Avoid the descendant (child) selector.
 *Very Bad:*
 ```
 #mainMenu > li > ul > li {}
 ```
 ---
+
 ##### Rely on inheritance.
 *Bad:*
 ```
@@ -57,9 +60,12 @@ ul .list-item {}
 #mainMenu { list-style-image: url(blah); }
 ```
 ---
+
 ##### Avoid vendor specific tags as much as possible.
 ---
+
 ## JavaScript / jQuery
+
 #### Apply the same selectors you’d use in CSS, to JavaScript selectors.
 *Bad:*
 ```
@@ -78,6 +84,7 @@ $(‘.list-item’, ‘#mainMenu’)
 $(‘#mainMenu’).find(‘.list-item’)
 ```
 ---
+
 ##### Optimize loops
 *Bad:*
 ```
@@ -88,6 +95,7 @@ $.each();
 for (var i = 0; iLen = myArray.length; i < iLen; i++) {...}
 ```
 ---
+
 ##### Always cache selectors.
 *Bad:*
 ```
@@ -102,6 +110,7 @@ $menuItems.css(‘display’, ‘none’);
 $menu.on('hover', function(){...});
 ```
 ---
+
 ## JavaScript Libraries
  
 * Don’t use [jQuery](http://jquery.com/) if its not necessary.
