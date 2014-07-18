@@ -1,2 +1,7 @@
-Front-end-Style-Guide
+Front-end Style Guide
 =====================
+##CSS
+
+##JavaScript / jQuery
+
+##JavaScript Libraries
