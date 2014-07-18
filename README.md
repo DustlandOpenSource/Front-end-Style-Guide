@@ -1,7 +1,7 @@
 Front-end Style Guide
 =====================
 ## CSS
-Using every declaration just once.
+##### Using every declaration just once.
 *Bad:*
 ```
 h1 { color: black; }
