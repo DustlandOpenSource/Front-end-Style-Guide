@@ -13,13 +13,90 @@ p { color: black; }
 ```
 h1, h2, h3, p { color: black; }
 ```
-*Best (if possible):*
+*Best (if applicable):*
 ```
 body { color: black; }
 ```
 ---
-Don’t concatenate ID’s or Classnames with tag names.
+##### Don’t concatenate ID’s or Classnames with tag names.
+*Bad:*
+```
+ul#mainMenu {}
+ul li.list-item {}
+```
+*Better:*
+```
+#mainMenu li {}
+#mainMenu .list-item {}
+ul .list-item {}
+```
+*Best:*
+```
+#mainMenu .list-item
+```
+---
+##### Avoid the descendant (child) selector.
+*Very Bad:*
+```
+#mainMenu > li > ul > li {}
+```
+---
+##### Rely on inheritance.
+*Bad:*
+```
+#mainMenu li { list-style-image: url(blah); }
+```
+*Good:*
+```
+#mainMenu { list-style-image: url(blah); }
+```
+---
+##### Avoid vendor specific tags as much as possible.
+---
 ## JavaScript / jQuery
-
+#### Apply the same selectors you’d use in CSS, to JavaScript selectors.
+*Bad:*
+```
+$(‘ul#mainMenu li’)
+```
+*Good:*
+```
+$(‘#mainMenu .list-item’)
+```
+*Better(use context):*
+```
+$(‘.list-item’, ‘#mainMenu’)
+```
+*Best (use find()):*
+```
+$(‘#mainMenu’).find(‘.list-item’)
+```
+---
+##### Optimize loops
+*Bad:*
+```
+$.each();
+```
+*Good:*
+```
+for (var i = 0; iLen = myArray.length; i < iLen; i++) {...}
+```
+---
+##### Always cache selectors.
+*Bad:*
+```
+$(‘#mainMenu .list-items’).css(‘display’, ‘none’);
+$(‘#mainMenu’).on(‘hover’, function() {...});
+```
+*Good:*
+```
+var $menu = $(‘#mainMenu’);
+var $menuItems = $menu.find(‘.list-items’);
+$menuItems.css(‘display’, ‘none’);
+$menu.on('hover', function(){...});
+```
+---
 ## JavaScript Libraries
  
+* Don’t use jQuery if its not necessary.
+* Use Low-Dash instead Underscore.
