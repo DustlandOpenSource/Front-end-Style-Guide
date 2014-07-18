@@ -6,6 +6,22 @@ Front-end Style Guide
 * [Google: Optimizing CSS](https://developers.google.com/speed/articles/optimizing-css)
 * [CSS Tricks: Efficiently Rendering CSS](http://css-tricks.com/efficiently-rendering-css/)
 
+## General
+##### Indent consistently and keep line length small
+Version control systems compare by lines. You can often avoid merge conflicts by properly separating functions into new lines
+*Bad:*
+```
+myObj.func1().func2().func3().css('display', 'none');
+```
+
+*Good*
+```
+myObj.func1()
+   .func2()
+   .func3()
+   .css('display', 'none');
+```
+
 ## CSS
 ##### Using every declaration just once.
 *Bad:*
@@ -97,6 +113,11 @@ $.each();
 ```
 for (var i = 0; iLen = myArray.length; i < iLen; i++) {...}
 ```
+
+*Optionally, going backwards typically has better performance*
+```
+for (var i = myArray.length; i >= 0; i--) {...}
+```
 ---
 
 ##### Always cache selectors.
@@ -113,6 +134,47 @@ $menuItems.css(‘display’, ‘none’);
 $menu.on('hover', function(){...});
 ```
 ---
+
+##### Minimize DOM operations
+*Bad:*
+```
+var len = 3;
+	for(i =0; i <len; i++){
+		$('.list').append('<li></li>')
+	}
+```
+*Good:* 
+```
+	var len = 3,
+		items = [];
+
+	for(i =0; i <len; i++){
+		items.push('<li></li>');
+	}
+
+	$('.list').append(items.join(''));
+```
+
+##### Use === NOT ==
+*Very Bad:*
+```
+1 == "1"
+```
+*Good*
+```
+1 === "1"
+```
+
+##### If a script shouldnt block the page parsing process, add async to the script tag
+*Bad*
+```
+<script src="analytics-lib.js"></script>
+```
+
+*Good*
+```
+<script src="analytics-lib.js" async></script>
+```
 
 ## JavaScript Libraries
  
