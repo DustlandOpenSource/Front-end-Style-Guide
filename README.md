@@ -43,10 +43,13 @@ ul .list-item {}
 ```
 ---
 
-##### Avoid the descendant (child) selector.
+##### Avoid the descendant (child) and universal selectors.
 *Very Bad:*
 ```
 #mainMenu > li > ul > li {}
+```
+```
+#mainMenu * {}
 ```
 ---
 
