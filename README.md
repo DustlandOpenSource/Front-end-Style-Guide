@@ -83,8 +83,9 @@ ul .list-item {}
 ##### Avoid vendor specific tags as much as possible.
 ---
 
-## JavaScript / jQuery
+## SASS
 #### Avoid deeply nested styling
+Nesting is awesome! It creates structure, and add's some modularity to your styling. But nesting too deeply, especially when its not neccessary, causes LOTS issues. Use the DRY (Don't Repeat Yourself) method to avoid duplication, and only override those styles when necessary. Try to stick to 3-4 levels as a maximum. 
 
 ---
 #### Avoid specifity issues by avoiding deeply nested styling
