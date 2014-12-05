@@ -89,10 +89,11 @@ Nesting is awesome! It creates structure, and add's some modularity to your styl
 
 ---
 #### Avoid specifity issues by avoiding deeply nested styling
----
+Deeply nested styling also causes specifity issues (when you have to create more classes to your styling to override the previous styling). This is easily avoided when you stick to a max of 3-4 levels deep of styling. Of course there will be times when you go over this, but its a good rule of thumb.
 
-#### Don't duplicate Compass provided mixins
 ---
+#### Don't duplicate Compass provided mixins
+
 
 ## JavaScript / jQuery
 
