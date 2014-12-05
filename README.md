@@ -84,6 +84,16 @@ ul .list-item {}
 ---
 
 ## JavaScript / jQuery
+#### Avoid deeply nested styling
+
+---
+#### Avoid specifity issues by avoiding deeply nested styling
+---
+
+#### Don't duplicate Compass provided mixins
+---
+
+## JavaScript / jQuery
 
 #### Apply the same selectors you’d use in CSS, to JavaScript selectors.
 *Bad:*
