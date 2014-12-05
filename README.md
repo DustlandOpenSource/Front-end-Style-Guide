@@ -93,7 +93,7 @@ Deeply nested styling also causes specifity issues (when you have to create more
 
 ---
 #### Don't duplicate Compass provided mixins
-
+Get familiar with Compass and it's documentation. Search there before creating your own mixin, and you'll avoid recreating those mixins. Also, you'll probably notice that Compass' mixins are more reliable, lighter and more browser friendly that the mixin you were about to write.
 
 ## JavaScript / jQuery
 
