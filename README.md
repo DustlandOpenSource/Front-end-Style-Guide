@@ -5,6 +5,7 @@ Front-end Style Guide
 * [Google: CSS Rules Intro](https://developers.google.com/speed/docs/best-practices/rules_intro)
 * [Google: Optimizing CSS](https://developers.google.com/speed/articles/optimizing-css)
 * [CSS Tricks: Efficiently Rendering CSS](http://css-tricks.com/efficiently-rendering-css/)
+* [AngularJs Style Guide](https://github.com/mgechev/angularjs-style-guide)
 
 ## General
 ##### Indent consistently and keep line length small
