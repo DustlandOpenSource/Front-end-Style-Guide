@@ -1,10 +1,13 @@
 Front-end Style Guide
 =====================
 ## References
+### CSS
 * [MDN: Writing Efficient CSS](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS)
 * [Google: CSS Rules Intro](https://developers.google.com/speed/docs/best-practices/rules_intro)
 * [Google: Optimizing CSS](https://developers.google.com/speed/articles/optimizing-css)
 * [CSS Tricks: Efficiently Rendering CSS](http://css-tricks.com/efficiently-rendering-css/)
+### JavaScript
+* [JavaScript StyleGuide (AirBnB)](https://github.com/airbnb/javascript)
 * [AngularJs Style Guide](https://github.com/mgechev/angularjs-style-guide)
 
 ## General
